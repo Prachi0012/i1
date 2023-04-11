@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.8"
+    android:background="@drawable/pagebg"
+    tools:context=".CallActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <EditText
+            android:id="@+id/edtMail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="#FDEBED"
+            android:inputType="text"
+            android:maxLines="1"
+            android:alpha="0.5"
+            android:paddingLeft="@dimen/_10sdp"
+            android:hint="Enter Your Email Id..."
+            android:textColor="@color/black" />
+
+        <EditText
+
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="password"
+            android:background="#FDEBED"
+            android:alpha="0.5"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_10sdp"
+            android:hint="Enter Your Password..."
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btncall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginHorizontal="@dimen/_50sdp"
+            android:background="@drawable/btnbg"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
